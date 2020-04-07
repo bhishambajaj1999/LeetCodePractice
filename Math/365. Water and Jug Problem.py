@@ -1,4 +1,4 @@
-# Bézout's theorem
+# Bézout's Lemma
 # 2 Jugs, unlimited supply of water, find if particular volume can be achieved
 
 class Solution:
