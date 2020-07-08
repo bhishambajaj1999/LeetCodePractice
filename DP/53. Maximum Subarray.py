@@ -13,3 +13,15 @@ class Solution:
             n[i] = min(v)
         
         return max(p)
+    
+# Kadane
+    
+    def maxSubArray1(self, nums: List[int]) -> int:
+        
+        m, msf = nums[0],nums[0]
+        
+        for i in range(1,len(nums)):
+            m = max(nums[i],nums[i] + m)
+            msf = max(m,msf)
+        
+        return msf
